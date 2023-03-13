@@ -8,6 +8,8 @@ public class RemovePoint : MonoBehaviour
     public Color startColor = Color.red;
 
     private Renderer newrenderer;
+    public GameObject particleEffect;
+    public float particleDuration = 2f;
 
     private void Start()
     {
@@ -18,6 +20,9 @@ public class RemovePoint : MonoBehaviour
     private void OnMouseDown()
     {
         scoreManager.RemovePoints(200);
+        GameObject particle = Instantiate(particleEffect, transform.position, Quaternion.identity);
+
+        Destroy(particle, particleDuration);
         Destroy(gameObject);
     }
 }

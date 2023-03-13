@@ -98,6 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
+  startColor: {r: 1, g: 0, b: 0, a: 1}
+  particleEffect: {fileID: 1876081050882714, guid: e5df5caad603c8349ba3481b8ded0927, type: 3}
+  particleDuration: 2
 --- !u!135 &7738175845800004829
 SphereCollider:
   m_ObjectHideFlags: 0
